@@ -1,0 +1,16 @@
+.panel {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .panel {
+    gap: 16px;
+    margin-top: 24px;
+  }
+}

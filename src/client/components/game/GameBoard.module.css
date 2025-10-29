@@ -1,0 +1,30 @@
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+}
+
+.puzzleContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: visible; /* Allow rotated pieces to be visible outside container */
+  padding: 60px; /* Add padding to ensure rotated pieces stay visible */
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .board {
+    padding: 32px;
+  }
+  
+  .puzzleContainer {
+    border-radius: 20px;
+  }
+}

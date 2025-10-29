@@ -1,0 +1,141 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dcfce7 0%, #f0fdf4 50%, #dcfce7 100%);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.welcomeTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #22c55e;
+  margin: 0 0 16px;
+  text-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.welcomeSubtitle {
+  font-size: 18px;
+  color: #059669;
+  margin: 0 0 24px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.instructions {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 500px;
+}
+
+.instructionsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #166534;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.instructionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instructionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.instructionTitle {
+  font-size: 16px;
+  color: #166534;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.instructionTitle strong {
+  color: #22c55e;
+}
+
+.instructionExplanation {
+  font-size: 14px;
+  color: #059669;
+  line-height: 1.4;
+  margin-left: 28px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+  
+  .welcome {
+    max-width: 600px;
+    padding: 40px;
+  }
+  
+  .welcomeTitle {
+    font-size: 48px;
+    margin: 0 0 24px;
+  }
+  
+  .welcomeSubtitle {
+    font-size: 22px;
+    margin: 0 0 32px;
+  }
+  
+  .instructions {
+    padding: 32px;
+    margin-bottom: 48px;
+  }
+  
+  .instructionsTitle {
+    font-size: 24px;
+  }
+  
+  .instructionsList {
+    gap: 24px;
+  }
+  
+  .instructionTitle {
+    font-size: 18px;
+  }
+  
+  .instructionExplanation {
+    font-size: 16px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcomeTitle {
+    font-size: 64px;
+  }
+  
+  .welcomeSubtitle {
+    font-size: 26px;
+  }
+}

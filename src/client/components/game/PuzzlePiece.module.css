@@ -1,0 +1,46 @@
+.piece {
+  position: absolute;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease; /* Longer transition for position changes */
+  z-index: 5; /* Same z-index for all pieces */
+  overflow: visible; /* Ensure rotated pieces are visible */
+}
+
+.piece:hover:not(.locked) {
+  transform: translate(-50%, -50%) scale(1.02);
+  filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6));
+  /* Keep same z-index on hover */
+}
+
+.piece.locked {
+  cursor: default;
+}
+
+.piece.correct {
+  filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.6));
+  z-index: 3; /* Slightly lower z-index for correctly placed pieces */
+}
+
+.piece.correctPosition {
+  filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.8));
+  z-index: 3;
+}
+
+.rotatingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+
+.overlaySvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
